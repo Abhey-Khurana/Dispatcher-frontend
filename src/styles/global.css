@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+:root {
+  --brand: #007070;
+  --accent: #FFA100;
+}
+
+html, body, #root { height: 100%; }
+
+body {
+  @apply bg-gray-50 text-gray-800;
+  font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+
+.rounded-figma-sm { border-radius: 8px; }
+.rounded-figma-md { border-radius: 12px; }
