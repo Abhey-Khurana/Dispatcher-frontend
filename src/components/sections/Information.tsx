@@ -3,6 +3,7 @@ import type { OfficeInfo } from '../../types';
 import InfoCard from '../ui/InfoCard'
 import SectionCard from '../ui/SectionCard'
 import OfficeInfoModal from '../modal/OfficeInfoModal';
+import DocumentUploader from './DocumentUploader';
 
 
 const officeInfoSet: OfficeInfo[] = [
@@ -97,7 +98,6 @@ export default function Information() {
     <SectionCard step={2} title="Information">
       <div className="w-full">
         <div className="grid grid-cols-4 rounded-lg">
-          {/* Left side (3 columns merged) */}
           <div className="col-span-3">
             <h2
               className="text-white font-semibold px-3 py-2 rounded-l"
@@ -106,7 +106,7 @@ export default function Information() {
               Office
             </h2>
 
-            <div className="grid grid-cols-3 gap-4 p-4 divide-x divide-gray-300" >
+            <div className="grid grid-cols-3 gap-4 p-3 divide-x divide-gray-300" >
               {/* First column */}
               <div className="space-y-4 p-5" >
                 <InfoCard officeInfo={officeInfoArray[0]} onEdit={handleEdit}/>
@@ -144,7 +144,9 @@ export default function Information() {
             >
               Documents
             </h2>
-            <div className="bg-white p-3 rounded shadow">Column 4</div>
+            <div className="bg-whitep-2 rounded shadow">
+              <DocumentUploader />
+            </div>
           </div>
         </div>
       </div>
