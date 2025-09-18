@@ -68,8 +68,17 @@ export default function LogsNotes() {
       {/* Header Row */}
       <div className="grid grid-cols-2 divide-x divide-gray-200" style={{ background: '#007070' }}>
         <div className="text-white font-medium px-3 py-2">Logs</div>
-        <div className="text-white font-medium px-3 py-2">Notes</div>
+
+        {/* Right column */}
+        <div className="flex items-center justify-between px-3 py-2">
+          <span className="text-white font-medium">Notes</span>
+          <button className="cursor-pointer  px-4 py-2 rounded-lg text-white font-medium" style={{backgroundColor:"#6a994e"}}>
+            ADD NOTE
+          </button>
+        </div>
       </div>
+
+
 
       <div className="grid grid-cols-2 divide-x divide-gray-300 ">
 
